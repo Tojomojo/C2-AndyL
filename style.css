@@ -1,0 +1,115 @@
+/*Text Styles*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: aquamarine
+}
+
+/* header */
+
+header {
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+    color: black;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 40px;
+    color: black;
+}
+
+header nav {
+    padding-top: 12px;
+    margin-right: 18px;
+    float: right;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+header nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* text styles */
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+p {
+    font-size: 14px;
+    color: black;
+}
+
+/*Main Background image */
+
+.Selfie {
+    background-image: url("../assets/images/SELF.jpg");
+    height: 600px;
+    width: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
+h3 {
+    margin-left: 30px;
+}
+
+/* Floats */
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+/* main */
+
+main {
+    width: 70%;
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/*Resume pics*/
+
+.resumePics {
+    margin-bottom: 18px;
+    padding: 40px;
+    min-height: 300px;
+    font-family: 'Courier New', Courier, monospace;
+    color: violet;
+}
+
+.resumePics img {
+    max-height: 500px;
+    max-width: 500px;
+}
+
+.resumePics h2 {
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+/*footer*/
+
+footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}

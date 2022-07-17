@@ -39,7 +39,7 @@ header nav ul li {
     margin-left: 20px;
 }
 
-/* text styles */
+/* text styles in general*/
 
 a {
     color: black;
@@ -48,7 +48,12 @@ a {
 
 p {
     font-size: 14px;
+    margin-top: 20px;
     color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex: 2 1 100px;
 }
 
 /*Main Background image */
@@ -59,10 +64,25 @@ p {
     width: 500px;
     background-size: cover;
     background-position: center;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 100px;
+    margin-left: 20px;
 }
 
+/* First application */
 h3 {
     margin-left: 30px;
+    margin-right: 30px;
+    background-size: contain;
+    float: right;
+    margin-right: 20px;
+    text-decoration: solid;
+}
+
+h4 {
+    text-align: center;
 }
 
 /* Floats */
@@ -72,10 +92,13 @@ h3 {
     margin-right: 25px;
 }
 
+
 .float-right {
     float: right;
     margin-left: 25px;
+    margin-top: 25px;
 }
+
 
 /* main */
 
@@ -88,8 +111,10 @@ main {
 /*Resume pics*/
 
 .resumePics {
-    margin-bottom: 18px;
+    margin-top: 20px;
+    margin-bottom: 25px;
     padding: 40px;
+    border: 10px;
     min-height: 300px;
     font-family: 'Courier New', Courier, monospace;
     color: violet;
@@ -98,18 +123,44 @@ main {
 .resumePics img {
     max-height: 500px;
     max-width: 500px;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
+.links  {
+    text-decoration: underline;
+}
 .resumePics h2 {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
     margin-bottom: 25px;
     font-size: 24px;
+    display: flex;
+    flex: 1 1 100px
 }
 
 /*footer*/
 
 footer {
-    padding: 30px;
     clear: both;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 768x) {
+    main,
+    .resumePics {
+        flex-direction: column;
+    }
+    header {
+        background-color: brown;
+    }
+    
+    main,
+    footer {
+        background-color: blanchedalmond;
+    }
+    
 }

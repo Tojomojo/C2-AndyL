@@ -59,7 +59,7 @@ p {
 /*Main Background image */
 
 .Selfie {
-    background-image: url("../assets/images/SELF.jpg");
+    background-image: url("../images/SELF.jpg");
     height: 600px;
     width: 500px;
     background-size: cover;
